@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cnine</title>
+  <title>CareerNine</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -15,7 +15,7 @@
 	  <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
   </ul>
 </nav>
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
   <button type="button" class="navbar-toggle button-nav" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
     <i class="fa fa-cog"></i>
   </button>
@@ -25,10 +25,16 @@
 
 
 <a class="navbar-brand" href="#">
-   <%= image_tag "logo.png", alt: "CareerNine Logo", class: "logo-brand" %>
+   <%= image_tag "careernine_logo_sm_blue.png", alt: "CareerNine Logo", class: "logo-brand" %>
 </a>
 </div>
 <%= yield %>
+
+<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
 
 </body>
 </html>
