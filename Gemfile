@@ -50,3 +50,6 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'omniauth-facebook'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'mini_magick'
+gem 'paperclip', '~> 4.2'
+gem 'aws-sdk', '< 2.0'
